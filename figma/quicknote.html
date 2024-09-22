@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles2.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>figma</title>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>GET A QUICK QUOTE</h1>
+      <p class="subtitle">2 SUPER EASY STEPS TO RECEIVE A PERSONAL QUOTE</p>
+
+      <div class="step-indicator">
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
+
+      <form>
+        <div class="custom-input-container">
+          <p>Origin Address / Postal Code</p>
+          <input type="text" placeholder="Moving From" />
+        </div>
+
+        <div class="custom-input-container">
+          <p>Origin Destination / Postal Code</p>
+          <input type="text" placeholder="Moving To" />
+        </div>
+
+        <div class="input-container row">
+          <div class="custom-small-input-container">
+            <div class="dropdown stairs">
+              <p>Stairs</p>
+              <input type="text" id="small-input1" placeholder="Origin" />
+              <button
+                type="button"
+                class="dropdown-toggle"
+                onclick="toggleImage(this)"
+              >
+                <img src="/Vector.png" alt="" class="button-icon" />
+              </button>
+              <ul class="dropdown-menu"></ul>
+            </div>
+          </div>
+          <div class="custom-small-input-container">
+            <div class="dropdown stairs">
+              <p>Stairs</p>
+              <input
+                type="text"
+                id="small-input2"
+                placeholder="Destination"
+                readonly
+              />
+              <button
+                type="button"
+                class="dropdown-toggle"
+                onclick="toggleImage(this)"
+              >
+                <img src="Vector.png" class="button-icon" alt="" />
+              </button>
+              <ul class="dropdown-menu"></ul>
+            </div>
+          </div>
+        </div>
+        <div class="submit_part">
+          <input type="checkbox" />
+          <p>
+            By clicking on “Request a Quote”, I agree to being contacted by
+            text, SMS, email, or phone, including an automated dialing system or
+            pre-recorded voice in connection with my upcoming move from or on
+            behalf of Flash Moving Company. Message and data rates may apply.
+          </p>
+          <button type="submit" class="next_btn">NEXT STEP</button>
+        </div>
+      </form>
+    </div>
+    <script src="/script.js"></script>
+  </body>
+</html>
